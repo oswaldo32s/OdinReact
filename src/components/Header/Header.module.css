@@ -1,0 +1,138 @@
+.mainHeader {
+  align-items: center;
+  background-color: var(--dark-accent);
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  padding: 0 15px;
+  color: var(--light-text);
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.headerNav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.themeBtn {
+  padding: 0 10px;
+  background-color: #00000000;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.themeSVG {
+  stroke: var(--text);
+  transition: stroke 0.2s linear, 
+  fill 0.2s linear;
+  fill: var(--text);
+}
+
+.themeSVG:hover {
+  stroke: var(--accent);
+  fill: var(--accent);
+  transition: stroke 0.2s linear,
+  fill 0.2s linear;
+}
+
+.menuBtn {
+  display: none;
+}
+
+.shownUl {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.shownLi {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  height: 100%;
+  cursor: pointer;
+  transition: color 0.2s linear;
+}
+
+.hiddenUl, .activeHiddenUl {
+  display: none;
+}
+
+.shownLi:hover {
+  color: var(--accent);
+  transition: color 0.2s linear;
+}
+
+
+
+@media (max-width: 800px) {
+
+  .menuBtn {
+    padding: 0 10px;
+    background-color: #00000000;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shownLi {
+    display: none;
+  }
+
+  .hiddenSVG {
+    display: none;
+  }
+
+  .hiddenUl {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 0px;
+    height: calc(100vh - 3rem);
+    background-color: var(--accent);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: width 0.3s ease-in;
+  }
+
+  .activeHiddenUl {
+    position: absolute;
+    top: 3rem;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 3rem);
+    background-color: var(--accent);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    transition: width 0.3s ease-in;
+  }
+  
+  .hiddenLi {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .hiddenLi:hover {
+    background-color: var(--accent-light);
+  }
+}
