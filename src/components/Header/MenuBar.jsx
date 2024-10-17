@@ -5,7 +5,7 @@ function MenuBar({status, isActive}) {
   return (
     <ul className={status === 'shown' ? 
     styles.shownUl :
-    isActive ? styles.hiddenUl : styles.activeHiddenUl}>
+    isActive ? styles.activeHiddenUl : styles.hiddenUl}>
       {navData.map(obj => {
           return (
               <li key={obj.id} className={status === 'shown' ? styles.shownLi : styles.hiddenLi}>{obj.name}</li>
