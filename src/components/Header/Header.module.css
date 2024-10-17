@@ -6,6 +6,8 @@
   justify-content: space-between;
   padding: 0 15px;
   color: var(--light-text);
+  width: 100%;
+  max-width: 1200px;
 }
 
 .logoText {
@@ -30,18 +32,22 @@
   justify-content: center;
 }
 
+.themeBtn:hover {
+  background-color: #00000000;
+}
+
 .themeSVG {
   stroke: var(--text);
   transition: stroke 0.2s linear, 
-  fill 0.2s linear;
+  fill 0.3s linear;
   fill: var(--text);
 }
 
 .themeSVG:hover {
-  stroke: var(--accent);
-  fill: var(--accent);
+  stroke: var(--text-accent);
+  fill: var(--text-accent);
   transition: stroke 0.2s linear,
-  fill 0.2s linear;
+  fill 0.3s linear;
 }
 
 .menuBtn {
@@ -62,7 +68,7 @@
   padding: 0 10px;
   height: 100%;
   cursor: pointer;
-  transition: color 0.2s linear;
+  transition: color 0.3s linear;
 }
 
 .hiddenUl, .activeHiddenUl {
@@ -70,8 +76,8 @@
 }
 
 .shownLi:hover {
-  color: var(--accent);
-  transition: color 0.2s linear;
+  color: var(--text-accent);
+  transition: color 0.3s linear;
 }
 
 
@@ -86,6 +92,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .menuBtn:hover {
+    background-color: #00000000;
   }
 
   .shownLi {
@@ -133,6 +143,6 @@
   }
   
   .hiddenLi:hover {
-    background-color: var(--accent-light);
+    background-color: var(--accent-hover);
   }
 }
