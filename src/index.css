@@ -2,30 +2,51 @@
   box-sizing: border-box;
 }
 
-:root {
-  display: flex;
-  justify-content: center;
-}
-
 body.light {
   --bg: #eeeeee;
   --bg-box: #dfdfdf;
   --text: #272121;
-  --accent: #B55021;
-  --accent-light: #ff9455;
+  --text-accent: #A8491D;
+  --accent: #ff7f35;
+  --accent-hover: #ff9050;
+  transition: background-color 0.3s linear,
+  color 0.3s linear;
 }
 
 body {
   --bg: #1C1818;
   --bg-box: #272121;
   --text: #eeeeee;
-  --accent: #D45D26;
-  --accent-light: #ff9455;
+  --text-accent: #ff9455;
+  --accent: #A8491D;
+  --accent-hover: #af5c2b;
   margin: 0;
-  max-width: 1200px;
   background-color: var(--bg);
   color: var(--text);
-  font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: background-color 0.3s linear,
+  color 0.3s linear;
+}
+
+#root {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 100vw;
+}
+
+button {
+  background-color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 7px;
+  color: var(--text);
+  cursor: pointer;
+  padding: 5px 15px;
+}
+
+button:hover {
+  background-color: var(--accent-hover);
 }
 
 @media (prefers-color-scheme: light) {
@@ -37,12 +58,16 @@ body {
     --accent-light: #ff9455;
     background-color: var(--bg);
     color: var(--text);
+    transition: background-color 0.3s linear,
+    color 0.3s linear;
   }
   body.dark {
     --bg: #1C1818;
     --bg-box: #272121;
     --text: #eeeeee;
-    --accent: #D45D26;
-    --accent-light: #ff9455;
+    --accent: #A8491D;
+    --accent-light: #f17832;
+    transition: background-color 0.3s linear,
+    color 0.3s linear;
   }
 }
