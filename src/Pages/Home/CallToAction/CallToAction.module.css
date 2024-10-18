@@ -1,0 +1,25 @@
+.wrapContainer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 3rem 20px;
+}
+
+.container {
+  align-items: center;
+  background-color: var(--bg-box);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem 20px;
+}
+
+.button {
+  height: 2.2rem;
+}
+
+.text {
+  margin: 7px;
+}
