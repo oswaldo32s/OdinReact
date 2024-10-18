@@ -1,0 +1,20 @@
+.wrapContainer {
+  background-color: var(--accent);
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  min-height: 10rem;
+  display: grid;
+  place-items: center;
+}
+
+.quote {
+  margin: 0;
+  font-size: 20px;
+  padding: 2.5rem 5rem;
+  text-align: center;
+}
