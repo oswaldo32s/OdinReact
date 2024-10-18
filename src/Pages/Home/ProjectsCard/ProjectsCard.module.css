@@ -1,0 +1,36 @@
+.wrapContainer {
+  justify-content: center;
+  background-color: var(--bg-box);
+  display: flex;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.boxContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 15px;
+}
+
+.img {
+  border: 1px solid red;
+  min-width: 200px;
+  min-height: 200px;
+  width: 100%;
+  height: 100%;
+}
+
+.cardTitle {
+  margin: 5px 0;
+}
+
+.cardParagraph {
+  margin: 5px 0;
+  font-size: 14px;
+}
