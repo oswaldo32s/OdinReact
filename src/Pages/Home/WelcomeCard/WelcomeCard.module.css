@@ -1,9 +1,16 @@
+.wrapContainer {
+  display: grid;
+  padding: 20px;
+  place-items: center;
+  width: 100%;
+}
+
 .container {
   max-width: 1200px;
   display: flex;
+  align-items: center;
   gap: 10px;
   width: 100%;
-  padding: 0 20px;
 }
 
 .img {
