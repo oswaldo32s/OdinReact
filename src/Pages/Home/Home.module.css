@@ -2,5 +2,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 15px;
+  gap: 20px;
+  width: 100%;
 }
