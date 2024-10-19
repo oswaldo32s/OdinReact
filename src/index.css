@@ -14,8 +14,8 @@ body.light {
 }
 
 body {
-  --bg: #1C1818;
-  --bg-box: #272121;
+  --bg: #0e0d0c;
+  --bg-box: #181615;
   --text: #eeeeee;
   --text-accent: #ff9455;
   --accent: #A8491D;
@@ -62,8 +62,8 @@ button:hover {
     color 0.3s linear;
   }
   body.dark {
-    --bg: #1C1818;
-    --bg-box: #272121;
+    --bg: #0e0d0c;
+    --bg-box: #181615;
     --text: #eeeeee;
     --accent: #A8491D;
     --accent-light: #f17832;
