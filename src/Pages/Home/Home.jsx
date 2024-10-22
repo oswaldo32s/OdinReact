@@ -1,6 +1,6 @@
 import WelcomeCard from "./WelcomeCard/WelcomeCard"
 import styles from './Home.module.css'
-import ProjectsCard from "./ProjectsCard/ProjectsCard"
+import ProjectsCard from "../Projects/ProjectsCard/ProjectsCard"
 import QuoteCard from "./QuoteCard/QuoteCard"
 import CallToAction from "./CallToAction/CallToAction"
 
