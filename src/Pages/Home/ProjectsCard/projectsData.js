@@ -1,9 +1,9 @@
 export const projectOverview = [
   {
     projectId: 1,
-    projectName: 'Project 1',
+    projectName: 'Etch-a-Sketch & Calculator',
     projectSrc: '',
-    projectDescription: "This is a small description for the odin's project"
+    projectDescription: "Simple projects from the Fundamentals sections in odin's project."
   },
   {
     projectId: 2,
