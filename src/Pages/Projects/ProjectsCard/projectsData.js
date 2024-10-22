@@ -1,26 +1,26 @@
 export const projectOverview = [
   {
     projectId: 1,
-    projectName: 'Etch-a-Sketch & Calculator',
+    projectName: 'Games',
     projectSrc: '',
-    projectDescription: "Simple projects from the Fundamentals sections in odin's project."
+    projectDescription: "Games projects from odin's project. etch-a-Sketch, calculator, tic-tac-toe, Battleship."
   },
   {
     projectId: 2,
-    projectName: 'Project 2',
+    projectName: 'Library',
     projectSrc: '',
-    projectDescription: "This is a small description for the odin's project"
+    projectDescription: "Library to store the books that I've read, the rate I gave the book and my honest review."
   },
   {
     projectId: 3,
-    projectName: 'Project 3',
+    projectName: 'Weather App',
     projectSrc: '',
-    projectDescription: "This is a small description for the odin's project"
+    projectDescription: "App to look at my city weather and see the forecast."
   },
   {
     projectId: 4,
-    projectName: 'Project 4',
+    projectName: 'CV Application',
     projectSrc: '',
-    projectDescription: "This is a small description for the odin's project"
+    projectDescription: "Forms that help you build your own Resume to be ready to apply to jobs."
   },
 ]

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './Header.module.css'
 import { navData } from './headerData'
 
@@ -8,7 +9,7 @@ function MenuBar({status, isActive}) {
     isActive ? styles.activeHiddenUl : styles.hiddenUl}>
       {navData.map(obj => {
           return (
-              <li key={obj.id} className={status === 'shown' ? styles.shownLi : styles.hiddenLi}>{obj.name}</li>
+              <li key={obj.id} className={status === 'shown' ? styles.shownLi : styles.hiddenLi}><Link to={obj.name.toLowerCase()}>{obj.name}</Link></li>
           )
       })}
      </ul>

@@ -29,11 +29,11 @@ body {
 }
 
 #root {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   gap: 10px;
   min-width: 100vw;
+  min-height: 100vh;
 }
 
 button {
