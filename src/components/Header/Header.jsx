@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styles from './Header.module.css'
 import MenuBar from './MenuBar'
+import { Link } from 'react-router-dom'
 
 function Header() {
   const [isActive, setIsActive] = useState(false)
@@ -17,7 +18,7 @@ function Header() {
   return (
       <header className={styles.mainHeader}>
           <section>
-              <span className={styles.logoText}>OG Dev</span>
+              <span className={styles.logoText}><Link to={`/`}>OG Dev</Link></span>
           </section>
           <nav className={styles.headerNav}>
               <button className={styles.themeBtn} onClick={handleThemeClick}>

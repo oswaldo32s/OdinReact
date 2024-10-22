@@ -1,16 +1,16 @@
 import Header from "./components/Header/Header"
-import Home from './Pages/Home/Home'
 import Footer from "./components/Footer/Footer"
+import { Outlet } from "react-router-dom"
 
-function App() {
+function Root() {
 
   return (
     <>
       <Header/>
-      <Home />
+        <Outlet/>
       <Footer/>
     </>
   )
 }
 
-export default App
+export default Root
