@@ -18,7 +18,7 @@ function Header() {
   return (
       <header className={styles.mainHeader}>
           <section>
-              <span className={styles.logoText}><Link to={`/`}>OG Dev</Link></span>
+              <span className={styles.logoText}><Link className={styles.link} to={`/`}>OG Dev</Link></span>
           </section>
           <nav className={styles.headerNav}>
               <button className={styles.themeBtn} onClick={handleThemeClick}>

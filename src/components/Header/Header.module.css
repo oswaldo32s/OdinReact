@@ -50,6 +50,16 @@
   fill 0.3s linear;
 }
 
+.link {
+  padding: 0 10px;
+  transition: color 0.2s linear;
+}
+
+.link:hover {
+  color: var(--text-accent);
+  transition: color 0.2s linear;
+}
+
 .menuBtn {
   display: none;
 }
@@ -65,7 +75,6 @@
 .shownLi {
   display: flex;
   align-items: center;
-  padding: 0 10px;
   height: 100%;
   cursor: pointer;
   transition: color 0.3s linear;
