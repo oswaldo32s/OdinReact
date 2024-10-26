@@ -1,0 +1,37 @@
+.wrapContainer {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.formSection {
+  width: 100%;
+  max-width: 500px;
+}
+
+.title {
+  margin: 10px;
+}
+
+.img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    justify-content: start;
+    flex-direction:column-reverse;
+  }
+}
