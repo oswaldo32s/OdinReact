@@ -9,7 +9,7 @@ function MenuBar({status, isActive}) {
     isActive ? styles.activeHiddenUl : styles.hiddenUl}>
       {navData.map(obj => {
           return (
-              <li key={obj.id} className={status === 'shown' ? styles.shownLi : styles.hiddenLi}><Link to={obj.name.toLowerCase()}>{obj.name}</Link></li>
+              <li key={obj.id} className={status === 'shown' ? styles.shownLi : styles.hiddenLi}><Link className={styles.link} to={obj.name.toLowerCase()}>{obj.name}</Link></li>
           )
       })}
      </ul>
