@@ -3,7 +3,7 @@
   display: grid;
   place-items: center;
   background-color: var(--bg);
-  padding: 3rem 20px;
+  padding: 20px;
 }
 
 .container {
