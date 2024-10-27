@@ -30,6 +30,7 @@ body {
 
 #root {
   display: grid;
+  place-items: center;
   grid-template-rows: auto 1fr auto;
   gap: 10px;
   min-width: 100vw;
