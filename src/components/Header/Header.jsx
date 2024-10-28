@@ -13,7 +13,6 @@ function Header() {
   
   function toggleMenu() {
     isActive ? setIsActive(false) : setIsActive(true)
-    console.log(isActive)
   }
   
   return (

@@ -10,7 +10,7 @@ function WelcomeCard() {
               <p>Welcome to The Odin Project: React made by Oswaldo Gonzalez. This website is created to practices all odin&apos;s projects in react and in a near Future serve as a portfolio for my Data Engineering and my Full Stack skills.</p>
               <button><Link to={'/about'}>More About Me</Link></button>
             </article>
-            <img className={styles.img} alt='Image of Oswaldo Gonzalez'></img>
+            <img className={styles.img} src='/images/introduction.webp' alt='Image representing creativity'></img>
         </section>
       </div>
   )

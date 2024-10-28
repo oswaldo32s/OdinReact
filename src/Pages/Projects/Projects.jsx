@@ -1,8 +1,16 @@
-import ProjectsCard from "./ProjectsCard/ProjectsCard";
+import { useParams } from "react-router-dom";
+import Games from "./Games/Games";
 
 function Projects() {
+  const {projectId} = useParams()
   return (
-    <ProjectsCard color={'light'}/>
+    <>
+    {projectId == 1 ? (
+      <Games/>
+    ) : (
+      <h2>404 : No project Found</h2>
+    )}
+    </>
   )
 }
 
