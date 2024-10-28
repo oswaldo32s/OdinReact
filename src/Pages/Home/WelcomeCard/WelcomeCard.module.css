@@ -15,10 +15,13 @@
 
 .img {
   background-color: var(--bg-box);
+  border-radius: 10px;
   display: grid;
   place-items: center;
   min-width: 300px;
   min-height: 300px;
+  max-width: 600px;
+  width: 100%;
 }
 
 @media (max-width: 800px) {
